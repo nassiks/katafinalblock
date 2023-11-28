@@ -1,0 +1,29 @@
+.image-slider .technic__slide{
+  max-width: 240px;
+  height: 160px;
+}
+
+.technic__slide-button{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-slider__text{
+  display: flex;
+  align-self: flex-start;
+  margin: 16px 0 0 16px;
+}
+
+.technic-icon{
+  align-self: flex-end;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px){
+  .image-slider .technic__slide{
+    min-width: 200px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,132 @@
+@import "../base/_vars";
+.header-container{
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  margin-right: -16px;
+  background-color: $whiteColor;
+  border-bottom: 1px solid $blueBorderLineColor;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  padding: 19px 16px;
+}
+
+.logo-img{
+  position: absolute;
+  left: 72px;
+  width: 96px;
+  height: 50px;
+}
+
+.header__menu--hidden, .button--hidden{
+  display: none;
+}
+
+.main__title{
+  padding: 24px 0;
+  &::before{
+    content: "";
+    height: 40px;
+    width: 4px;
+    position: absolute;
+    left: 0;
+    background-color: $blueHighlightColor;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.header__menu--active{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  &::before{
+    content: "";
+    height: 32px;
+    border-left: 2px $grayBorderColor solid;
+    border-radius: 1px;
+    padding-right: 4px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 768px){
+  .header-container{
+    width: calc(100% + 32px);
+    margin-left: -24px;
+    margin-right: -24px;
+    background-color: $whiteColor;
+    border-bottom: 1px solid $blueBorderLineColor;
+  }
+
+  .header__inner{
+    padding: 19px 24px;
+  }
+
+  .logo-img{
+    left: 105px;
+  }
+
+  .header__menu::after {
+    content: "";
+    height: 32px;
+    border-left: 2px $grayBorderColor solid;
+    position: absolute;
+    top: 28px;
+    left: 84px;
+    border-radius: 1px;
+  }
+
+  .header__menu--all {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .header__menu--hidden{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1366px){
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    margin-bottom: 40px;
+  }
+
+  .main{
+    &::before{
+      content: "";
+      height: 40px;
+      width: 4px;
+      position: absolute;
+      top: 42px;
+      background-color: $blueHighlightColor;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  .header {
+    display: none;
+  }
+
+  .main__title{
+    padding: 0;
+    &::before{
+      content: none;
+    }
+  }
+
+  .button--hidden{
+    display: flex;
+  }
+}

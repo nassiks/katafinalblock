@@ -1,0 +1,21 @@
+.main__menu-list{
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 24px;
+  gap: 0;
+  padding: 0;
+}
+
+.main__menu-list::-webkit-scrollbar {
+  display: none; /* This will completely hide the scrollbar */
+}
+
+
+@media (min-width: 1120px){
+  .main__menu-list {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../base/_vars";
+
+.price__footer-link{
+  display: inline;
+  &:hover{
+    color: $pinkColor;
+    transition: color 0.3s;
+  }
+}
+
+.confidentiality-link{
+  &:hover{
+    color: $blackTextColor;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+}
+
+.sidebar__lang-item, .sidebar__menu-item, .email, .tel{
+  &:hover{
+    color: $pinkColor;
+    transition: color 0.3s;
+  }
+}
+
+.menu__item-active{
+  color: $grayTextColor;
+  &:hover{
+    color: $grayTextColor;
+    transition: color 0.3s;
+  }
+}

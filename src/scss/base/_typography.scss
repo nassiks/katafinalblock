@@ -1,0 +1,154 @@
+@import "_vars";
+
+h1{
+  font-family: "TT Lakes Bold", "Arial", sans-serif;
+  font-size: $fontSizeLarge;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: $blackTextColor;
+}
+
+h2{
+  font-family: "TT Lakes Regular", "Arial", sans-serif;
+  font-size: $fontSizeBase;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $grayTextColor;
+  text-transform: uppercase;
+}
+
+button, a{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeBase;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $blackTextColor;
+}
+
+.about__text-left{
+  font-family: "TT Lakes Regular", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $blackTextColor;
+}
+
+.image-slider__text{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeBase;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $blackTextColor;
+}
+
+.repair-service__label{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  line-height: 16px;
+  color: $grayTextColor;
+}
+
+.repair-service__value{
+  font-family: "TT Lakes Regular", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: $blackTextColor;
+}
+
+.price__footer-text{
+  font-family: "TT Lakes Regular", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.price__footer-link-text{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+}
+
+.footer__text, .confidentiality-link{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  line-height: 16px;
+  text-align: center;
+  color: $grayTextColor;
+}
+
+.email{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeBase;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.sidebar__info-lang{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeBase;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $blackTextColor;
+  text-transform: uppercase;
+}
+
+.tel{
+  font-family: "TT Lakes Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+
+.price__table-header{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  line-height: 16px;
+  color: $grayTextColor;
+}
+
+.modal__title{
+  font-family: "TT Lakes Bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: $blackTextColor;
+}
+
+.modal__input, .modal__textarea{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeBase;
+  color: $grayTextColor;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.modal__disclaimer{
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  color: $grayTextColor;
+  line-height: 16px;
+}
+
+.modal__button{
+  font-family: "TT Lakes Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15 px;
+  color: $whiteColor;
+  text-transform: uppercase;
+}
+
+.modal__disclaimer-link{
+  color: $pinkColor;
+  font-family: "TT Lakes Medium", "Arial", sans-serif;
+  font-size: $fontSizeSmall;
+  line-height: 16px;
+  &:hover{
+    color: $blackTextColor;
+    text-decoration: underline;
+  }
+}
+

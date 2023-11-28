@@ -1,0 +1,129 @@
+@import "../base/_vars";
+
+.showMore__button{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: inherit;
+  gap: 8px;
+  padding-right: 16px;
+  height: 24px;
+  border: 2px transparent solid;
+  cursor: pointer;
+  &:hover{
+    border-color: $blueBorderButtonColor;
+    border-radius: 5px;
+  }
+  &-image{
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+}
+
+.button-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid $pinkColor;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  &:hover{
+    background-color: $pinkHoverColor;
+    border-color: $pinkHoverColor;
+    transition: background-color 0.5s;
+  }
+}
+
+.menu__button-icon{
+  background-color: $pinkColor;
+}
+
+.repair-service__button, .modal__button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  background-color: $pinkColor;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  gap: 8px;
+  border: 2px transparent solid;
+  cursor: pointer;
+  &-text{
+    color: $whiteColor;
+    text-transform: uppercase;
+    padding-left: 12px;
+  }
+  &-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+  &:hover{
+    background-color: $pinkHoverColor;
+    border-color: $pinkHoverColor;
+    transition: background-color 0.5s;
+  }
+}
+
+.main__menu-item{
+  text-align: center;
+  color: $grayTextColor;
+  white-space: nowrap;
+  padding: 8px 9px 8px 16px;
+  border: 2px transparent solid;
+  border-radius: 5px;
+  &:hover{
+    background-color: $whiteColor;
+    color: $pinkColor;
+    transition: background-color 0.5s;
+  }
+}
+
+.menu__item-active{
+  background-color: $whiteColor;
+  border-color: $blueBorderButtonColor;
+}
+
+.menu__button-logo{
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  padding: 19px 0;
+  background-color: inherit;
+}
+
+.menu__button-toggle{
+  background-color: inherit;
+  cursor: pointer;
+  &:hover {
+    color: $pinkColor;
+    transition: color 0.5s;
+  }
+}
+
+.menu__button-toggle:hover .button-icon{
+  background-color: $pinkHoverColor;
+  border-color: $pinkHoverColor;
+  transition: background-color 0.5s;
+}
+
+.showMore__button--hidden{
+  display: none;
+}
+
+@media (min-width: 768px){
+  .showMore__button--hidden{
+    display: flex;
+  }
+}

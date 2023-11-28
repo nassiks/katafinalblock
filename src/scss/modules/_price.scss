@@ -1,0 +1,145 @@
+@import "../base/_vars";
+
+.image-slider .price__slide{
+  box-sizing: border-box;
+  max-width: 260px;
+  height: 200px;
+  padding: 16px;
+  border-color: transparent;
+}
+
+.price__inner{
+  padding-bottom: 40px;
+}
+
+.repair-service{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+}
+
+.repair-service__info{
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.repair-service__label{
+  margin-bottom: 4px;
+}
+
+.repair-service__duration-value{
+  white-space: nowrap;
+}
+
+.price__footer{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price__table-header{
+  display: none;
+}
+
+.price__footer-link-image{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 27px;
+}
+
+.price__footer-link-img{
+  width: 6px;
+  height: 12px;
+}
+
+@media (min-width: 768px){
+  .image-slider .price-swiper__slider{
+    min-width: 100%;
+    border-radius: 6px;
+  }
+
+  .image-slider .price-slider__wrapper{
+    min-width: 100%;
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .image-slider .price__slide{
+    min-width: 100%;
+    height: 65px;
+    align-items: center;
+    margin-top: 0;
+    border: none;
+    border-radius: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $grayBorderColor;
+    &:last-child{
+      border-bottom:none;
+    }
+    &:hover{
+      border-color: $grayBorderColor;
+    }
+  }
+
+  .price__table-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 31px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .table-header__about{
+    flex-basis: 52.5%;
+  }
+
+  .table-header__pricing{
+    flex-basis: 15.5%;
+  }
+
+  .repair-service__about{
+    flex-basis: 54%;
+  }
+
+  .repair-service__pricing{
+    flex-basis: 14%;
+  }
+
+  .repair-service{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .repair-service__info{
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .repair-service__duration{
+    width: 39%;
+  }
+
+  .price__footer{
+    width: 60%;
+  }
+
+  .repair-service__label{
+    display: none;
+  }
+}
